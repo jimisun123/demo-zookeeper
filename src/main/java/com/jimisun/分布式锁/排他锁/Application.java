@@ -92,7 +92,7 @@ public class Application {
      */
     public static void connectCuratorClient() {
         RetryPolicy retry = new ExponentialBackoffRetry(1000, 3);
-        client = CuratorFrameworkFactory.newClient("1.15.229.65:2181,1.15.229.65:2182,1.15.229.65:2183", retry);
+        client = CuratorFrameworkFactory.newClient("xxx", retry);
         client.start();
         System.out.println("zookeeper初始化连接成功：" + client);
     }
